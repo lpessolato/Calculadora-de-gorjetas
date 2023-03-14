@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icons8-calculadora-96.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script defer src="./script.js"></script>
     <title>Gorjetas</title>
 </head>
 <body>
-    
+    <header>
+        <p>SPLI</p>
+        <P>TTER</P>
+    </header>
+    <main>
+        <div class="billContainer">
+            <p>Conta</p>
+            <input placeholder="$" type="number">
+        </div>
+
+        <div class="tipContainer">
+            <p>Selecione a gorjeta</p>
+            <button class="5%">5%</button>
+            <button class="10%">10%</button>
+            <button class="15%">15%</button>
+            <button class="25%">25%</button>
+            <button class="50%">50%</button>
+            <input class="custom" placeholder="Custom" type="number">
+        </div>
+
+        <div class="peopleContainer">
+            <p>Numero de Pessoas</p>
+            <input class="people" placeholder="1" type="number">
+        </div>
+        <div class="resultContainer">
+            <div class="tip">
+                <p>Gorjeta por pessoa</p>
+                <p>$0</p>
+            </div>
+            <div class="totalTip">
+                <p>Total por pessoa</p>
+                <p>$0</p>
+            </div>
+            <button class="reset">RESET</button>
+        </div>
+    </main>
 </body>
 </html>
