@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+body{
+    margin: 0px;
+    padding: 5em 0em;
+    background-color: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Mono', sans-serif;
+    height: 100vh;
+}
+header{
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+main{
+    background-color: white;
+    border-radius: 15px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+.billContainer, .tipContainer, .peopleContainer, .resultContainer{
+    margin-left: 1.5em;
+}
+.billContainer,.tipContainer,.peopleContainer p{
+    margin-bottom: 0.3em;
+    font-size: 1.2rem;
+    color: #507174;
+    font-weight: bold;
+}
+.billContainer input{
+    text-align: right;
+    width: 70%;
+    padding: 0.5em 1em;
+    color: #00474A;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #F0F9FB;
+    border: none;
+    border-radius: 5px;
+    background-image:url("./img/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position:1em;
+    background-size: 1.2rem;
+}
+.tipContainer section {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 0.5em;
+}
+.qntTip{
+    padding: 1em 0em;
+    border-radius: 5px;
+    background-color: #00474A;
+    color: white;
+    border: none;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 500;
+}
+.custom{
+    background-color:#F2F9FB;
+    border: none;
+    border-radius: 5px;
+    text-align:right;
+    color: #507174;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.peopleContainer input{
+    margin: 1em 0em;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    width: 70%;
+    padding: 1em 1em;
+    color: #00474A;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #F0F9FB;
+    background-image: url("./img/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 1em;
+    background-size: 1rem;
+}
+.resultContainer{
+    margin: 0px;
+    background-color: #00474A;
+    border-radius: 5px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tip, .totalTip{
+    margin-top: 1em;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.totalTip{
+    margin: 0px;
+    margin-bottom: 2em;
+    color: white;
+}
+.tip{
+    color: white;
+}
+.tipPerson, .totalPerson{
+    color: #27C3AE;
+}
+.reset{
+    margin-bottom: 2em;
+    padding: 0.5em 30%;
+    border: none;
+    border-radius: 5px;
+    background-color: #27C3AE;
+    color: #00474A;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+@media (min-width: 768px){
+    main{
+        width: 70%;
+        display: grid;
+        grid-template-areas: "bill result"
+                                "tip result"
+                                "people result";
+    }
+    .billContainer{
+        grid-area: bill;
+    }
+    .tipContainer{
+        grid-area: tip;
+    }
+    .peopleContainer{
+        grid-area: people;
+    }
+    .resultContainer{
+        grid-area: result;
+        justify-content: space-around;
+        font-size: 1.5rem;
+    }
+    .qntTip:hover{
+        cursor: pointer;
+        color: #00474A;
+        background-color: #27C3AE;
+    }
+    .reset:hover{
+        cursor: pointer;
+        color: #27C3AE;
+        background-color: #507174;
+    }
+}

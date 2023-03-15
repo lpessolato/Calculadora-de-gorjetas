@@ -11,37 +11,38 @@
 </head>
 <body>
     <header>
-        <p>SPLI</p>
-        <P>TTER</P>
+        <img src="./img/logo.svg" alt="Logo site">
     </header>
     <main>
         <div class="billContainer">
             <p>Conta</p>
-            <input placeholder="$" type="number">
+            <input placeholder="" type="number">
         </div>
 
         <div class="tipContainer">
-            <p>Selecione a gorjeta</p>
-            <button class="5%">5%</button>
-            <button class="10%">10%</button>
-            <button class="15%">15%</button>
-            <button class="25%">25%</button>
-            <button class="50%">50%</button>
+            <p>Selecione a gorjeta %</p>
+            <section>
+                <button class="5% qntTip">5%</button>
+                <button class="10% qntTip">10%</button>
+                <button class="15% qntTip">15%</button>
+                <button class="25% qntTip">25%</button>
+                <button class="50% qntTip">50%</button>
             <input class="custom" placeholder="Custom" type="number">
+            </section>
         </div>
 
         <div class="peopleContainer">
             <p>Numero de Pessoas</p>
-            <input class="people" placeholder="1" type="number">
+            <input class="people" placeholder="" type="number">
         </div>
         <div class="resultContainer">
             <div class="tip">
                 <p>Gorjeta por pessoa</p>
-                <p>$0</p>
+                <p class="tipPerson">$0</p>
             </div>
             <div class="totalTip">
                 <p>Total por pessoa</p>
-                <p>$0</p>
+                <p class="totalPerson">$0</p>
             </div>
             <button class="reset">RESET</button>
         </div>
