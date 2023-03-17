@@ -28,8 +28,16 @@ bill.addEventListener("keyup",()=>{
 
 percentage.forEach((obj)=>{
     obj.addEventListener("click",(e)=>{
-        let btnClidado = e.target.innerText
-        let tirarOperador = btnClidado.slice(0, -1)
+        let btnClidado = e.target
+        let textoBtnClidado = btnClidado.innerText
+        if(btnClidado.id != textoBtnClidado){
+            btnClidado.id = `${btnClidado.innerText}`
+        }
+        else{
+            btnClidado.id = "btnClicado"
+        }
+        console.log(btnClidado.id, textoBtnClidado)
+        let tirarOperador = textoBtnClidado.slice(0, -1)
         qtnPorcento = parseInt(tirarOperador)
     })
 })
@@ -52,4 +60,7 @@ btnReset.addEventListener("click",()=>{
     totalPerson.innerHTML = "$0"
     bill.value = null
     people.value = null
+    percentage.forEach((obj)=>{
+        obj.id = obj.innerText
+    })
 })
