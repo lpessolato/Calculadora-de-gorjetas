@@ -43,7 +43,7 @@ main{
     background-color: #F0F9FB;
     border: none;
     border-radius: 5px;
-    background-image:url("./img/icon-dollar.svg");
+    background-image:url("/assets/img/icon-dollar.svg");
     background-repeat: no-repeat;
     background-position:1em;
     background-size: 1.2rem;
@@ -93,7 +93,7 @@ main{
     font-size: 1rem;
     font-weight: bold;
     background-color: #F0F9FB;
-    background-image: url("./img/icon-person.svg");
+    background-image: url("/assets/img/icon-person.svg");
     background-repeat: no-repeat;
     background-position: 1em;
     background-size: 1rem;
