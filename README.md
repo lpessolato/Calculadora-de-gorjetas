@@ -1,6 +1,6 @@
 # Calculadora de gorjetas ![Calculadora](./assets/img/icons8-calculadora-32.png)
 
-![Gorjetas](./assets/img/vitrine.png)
+![Gorjetas](./assets/img/vitrine.png) <br>
 <a href="https://lpessolato.github.io/Calculadora-de-gorjetas/">Clique aqui para acessar</a>
 
 ## Tecnologias Utilizadas
